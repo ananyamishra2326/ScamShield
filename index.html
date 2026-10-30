@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scam Shield helps you recognize online scams and find trusted cybercrime support.">
+    <title>Scam Shield | Stay Safe Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#home" class="brand">
+            <span class="brand-icon">S</span>
+            Scam Shield
+        </a>
+
+        <nav>
+            <a href="#checker">Scam Checker</a>
+            <a href="#safety">Safety Tips</a>
+            <a href="#alerts">Scam Alerts</a>
+            <a href="#report">Report</a>
+        </nav>
+
+        <a href="#emergency" class="nav-button">Get Help</a>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">YOUR DIGITAL SAFETY COMPANION</span>
+                <h1>Stay one step ahead of <span>online scams.</span></h1>
+                <p>
+                    Check suspicious messages, recognize fraud warning signs,
+                    and learn what to do when something doesn't feel right.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#checker" class="primary-button">Check for Scams →</a>
+                    <a href="#safety" class="secondary-button">Learn to Stay Safe</a>
+                </div>
+
+                <div class="trust-note">
+                    <span class="green-dot"></span>
+                    Think before you click. Stay safe online.
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="shield-illustration">🛡️</div>
+                <h3>Your safety matters.</h3>
+                <p>Pause. Check. Protect.</p>
+
+                <div class="security-item">
+                    <span class="check-icon">✓</span>
+                    Recognize suspicious messages
+                </div>
+                <div class="security-item">
+                    <span class="check-icon">✓</span>
+                    Protect your banking details
+                </div>
+                <div class="security-item">
+                    <span class="check-icon">✓</span>
+                    Find trusted reporting resources
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div>
+                <strong>01</strong>
+                <span>Check suspicious messages</span>
+            </div>
+            <div>
+                <strong>02</strong>
+                <span>Learn common scam signs</span>
+            </div>
+            <div>
+                <strong>03</strong>
+                <span>Know where to get help</span>
+            </div>
+        </section>
+
+        <section class="section" id="checker">
+            <div class="section-heading">
+                <span class="eyebrow">SMARTER ONLINE SAFETY</span>
+                <h2>Check before you trust.</h2>
+                <p>Enter a suspicious message, SMS, email, or the text from a phone call.</p>
+            </div>
+
+            <div class="checker-card">
+                <label for="scamType">What would you like to check?</label>
+                <select id="scamType">
+                    <option value="message">SMS / Text Message</option>
+                    <option value="bank">Banking / Payment Message</option>
+                    <option value="call">Suspicious Phone Call</option>
+                    <option value="link">Website / Link</option>
+                    <option value="image">Photo / Screenshot</option>
+                </select>
+
+                <label for="scamInput">Enter the message or details</label>
+                <textarea id="scamInput" rows="5"
+                    placeholder="Example: Your bank account will be blocked today. Click this link and enter your OTP..."></textarea>
+
+                <div class="input-note">
+                    <span>ⓘ</span>
+                    Never enter real passwords, OTPs, PINs, or full bank details.
+                </div>
+
+                <button class="primary-button full-button" id="analyzeBtn">
+                    Analyze for Warning Signs →
+                </button>
+
+                <div id="analysisResult" class="result-box hidden" aria-live="polite"></div>
+
+                <div id="imageGuide" class="image-guide hidden">
+                    <h3>Photo and screenshot safety guide</h3>
+                    <p>Look for these warning signs:</p>
+                    <ul>
+                        <li>Fake payment confirmations or edited receipts.</li>
+                        <li>QR codes asking you to pay or share information.</li>
+                        <li>Fake identity documents or misleading offers.</li>
+                        <li>Unusual spelling, mismatched logos, or suspicious links.</li>
+                    </ul>
+                    <p class="small-note">
+                        This guide does not scan or authenticate images.
+                        A genuine-looking screenshot can still be fraudulent.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section soft-section" id="safety">
+            <div class="section-heading">
+                <span class="eyebrow">KNOW THE WARNING SIGNS</span>
+                <h2>Common scams to watch out for.</h2>
+                <p>Learn the tricks scammers use to pressure people into making mistakes.</p>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <div class="feature-icon lavender">💳</div>
+                    <h3>Banking & UPI Fraud</h3>
+                    <p>Fraudsters may impersonate bank staff or send fake payment requests.</p>
+                    <span class="tip-label">Never share your UPI PIN or OTP.</span>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon peach">📱</div>
+                    <h3>Fake Calls & Messages</h3>
+                    <p>Scammers may threaten account suspension or promise unexpected rewards.</p>
+                    <span class="tip-label">Verify through official channels.</span>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon blue">🔗</div>
+                    <h3>Phishing Links</h3>
+                    <p>Fake websites may imitate banks, delivery services, or government portals.</p>
+                    <span class="tip-label">Check the website address carefully.</span>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon green">🖼️</div>
+                    <h3>Fake Images & Receipts</h3>
+                    <p>Edited screenshots and fake payment proofs can mislead unsuspecting users.</p>
+                    <span class="tip-label">Verify payments in your own account.</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <span class="eyebrow">STAY PROTECTED</span>
+                <h2>Simple habits. Stronger security.</h2>
+            </div>
+
+            <div class="tips-list">
+                <div class="tip-row">
+                    <span class="tip-number">01</span>
+                    <div>
+                        <h3>Never share your OTP or PIN</h3>
+                        <p>Legitimate bank staff should not ask you to disclose these secrets.</p>
+                    </div>
+                </div>
+
+                <div class="tip-row">
+                    <span class="tip-number">02</span>
+                    <div>
+                        <h3>Don't act under pressure</h3>
+                        <p>Pause when someone threatens you or demands an urgent payment.</p>
+                    </div>
+                </div>
+
+                <div class="tip-row">
+                    <span class="tip-number">03</span>
+                    <div>
+                        <h3>Verify before transferring money</h3>
+                        <p>Check the recipient and confirm payments in your bank or UPI app.</p>
+                    </div>
+                </div>
+
+                <div class="tip-row">
+                    <span class="tip-number">04</span>
+                    <div>
+                        <h3>Use official websites</h3>
+                        <p>Find contact details independently instead of trusting links in messages.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- Scam Alert Center -->
+<section class="section soft-section" id="alerts">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-tag">STAY ALERT</span>
+            <h2>Scam Alert Center</h2>
+            <p>
+                Learn about common online scams, recognize warning signs,
+                and protect your money and personal information.
+            </p>
+        </div>
+
+        <div class="feature-grid">
+
+            <!-- Alert 1 -->
+            <div class="feature-card">
+                <div class="feature-icon">🏦</div>
+                <h3>Fake Bank KYC Messages</h3>
+                <span class="alert-badge high">High Risk</span>
+
+                <p>
+                    Fraudsters send messages claiming your bank account
+                    will be blocked unless you update your KYC immediately.
+                </p>
+
+                <h4>Warning Signs</h4>
+                <ul>
+                    <li>Urgent account-blocking threats</li>
+                    <li>Unknown links asking for bank details</li>
+                    <li>Requests for OTP or PIN</li>
+                </ul>
+
+                <h4>What You Should Do</h4>
+                <p>
+                    Do not click suspicious links. Contact your bank using
+                    its official website or app.
+                </p>
+            </div>
+
+            <!-- Alert 2 -->
+            <div class="feature-card">
+                <div class="feature-icon">💸</div>
+                <h3>UPI Payment Scams</h3>
+                <span class="alert-badge high">High Risk</span>
+
+                <p>
+                    Scammers may pretend to send you money or trick you
+                    into approving a payment request.
+                </p>
+
+                <h4>Warning Signs</h4>
+                <ul>
+                    <li>Requests to enter your UPI PIN to receive money</li>
+                    <li>Unexpected collect requests</li>
+                    <li>Pressure to make an immediate payment</li>
+                </ul>
+
+                <h4>What You Should Do</h4>
+                <p>
+                    Never enter your UPI PIN to receive money. Check the
+                    payment details carefully before approving anything.
+                </p>
+            </div>
+
+            <!-- Alert 3 -->
+            <div class="feature-card">
+                <div class="feature-icon">📞</div>
+                <h3>Fraudulent Phone Calls</h3>
+                <span class="alert-badge medium">Be Careful</span>
+
+                <p>
+                    Someone may pretend to be a bank employee, police
+                    officer, or government official to scare you.
+                </p>
+
+                <h4>Warning Signs</h4>
+                <ul>
+                    <li>Threats of arrest or account suspension</li>
+                    <li>Requests for OTPs or confidential details</li>
+                    <li>Demands for urgent payments</li>
+                </ul>
+
+                <h4>What You Should Do</h4>
+                <p>
+                    End the suspicious call. Verify the claim independently
+                    through an official contact number.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Emergency Help -->
+        <div class="alert-help">
+            <h3>🚨 Already Lost Money to a Cyber Fraud?</h3>
+            <p>
+                If you are in India, contact the cybercrime helpline
+                <strong>1930</strong> as soon as possible and report the
+                incident through the official cybercrime portal.
+            </p>
+
+            <a
+                href="https://cybercrime.gov.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+            >
+                Report Cybercrime
+            </a>
+        </div>
+
+    </div>
+</section>
+
+        <section class="section report-section" id="report">
+            <div class="section-heading">
+                <span class="eyebrow">HELP US UNDERSTAND THE ISSUE</span>
+                <h2>Describe a suspicious incident.</h2>
+                <p>Use this form to prepare a summary of what happened.</p>
+            </div>
+
+            <form id="reportForm" class="report-card">
+                <div class="form-row">
+                    <div>
+                        <label for="reportType">Incident type</label>
+                        <select id="reportType" required>
+                            <option value="">Select incident type</option>
+                            <option>Banking / UPI Fraud</option>
+                            <option>Suspicious Call</option>
+                            <option>Fraudulent Message</option>
+                            <option>Fake Website / Link</option>
+                            <option>Fake Image / Payment Proof</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="reportDate">Incident date</label>
+                        <input type="date" id="reportDate" required>
+                    </div>
+                </div>
+
+                <label for="reportDetails">What happened?</label>
+                <textarea id="reportDetails" rows="4" required
+                    placeholder="Describe the incident. Do not include passwords, OTPs, or complete account numbers."></textarea>
+
+                <button type="submit" class="primary-button full-button">
+                    Prepare Incident Summary →
+                </button>
+
+                <div id="reportResult" class="result-box hidden" aria-live="polite"></div>
+                <p class="small-note">
+                    Your report is saved to the Scam Shield database.
+                    It does not constitute an official police complaint.
+                    For official complaints, use the cybercrime portal above.
+                </p>
+            </form>
+        </section>
+
+        <section class="emergency-section" id="emergency">
+            <div class="emergency-content">
+                <span class="eyebrow">NEED URGENT ASSISTANCE?</span>
+                <h2>Act quickly if you suspect fraud.</h2>
+                <p>
+                    If you have lost money to a cyber financial scam in India,
+                    report it as soon as possible.
+                </p>
+
+                <div class="emergency-actions">
+                    <a href="https://cybercrime.gov.in/" target="_blank"
+                        rel="noopener noreferrer" class="primary-button">
+                        Official Cybercrime Portal ↗
+                    </a>
+
+                    <a href="https://www.mha.gov.in/" target="_blank"
+                        rel="noopener noreferrer" class="secondary-button">
+                        Ministry of Home Affairs ↗
+                    </a>
+                </div>
+
+                <div class="helpline">
+                    <span>Cyber financial fraud helpline</span>
+                    <a href="tel:1930">1930</a>
+                    <p>For immediate reporting of suspected cyber financial fraud in India.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#home" class="brand">
+            <span class="brand-icon">S</span>
+            Scam Shield
+        </a>
+        <p>Stay alert. Stay informed. Stay protected.</p>
+        <p class="footer-note">
+            Scam checks are rule-based guidance, not a guarantee that a message is safe.
+        </p>
+        <p class="copyright">© 2026 Scam Shield</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

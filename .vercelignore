@@ -1,0 +1,10 @@
+# Don't upload local dev artifacts to Vercel
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.db
+*.log
+backend/
+query
+.gitignore

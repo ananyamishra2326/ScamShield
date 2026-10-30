@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local database (do NOT commit)
+*.db
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vercel local cache
+.vercel/
+
+# Misc
+query
